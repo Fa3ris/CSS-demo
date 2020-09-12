@@ -1,0 +1,44 @@
+.flexbox-container {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+
+.container {
+    background : green;
+}
+
+.flexbox-item {
+    background-color: orange;
+    border: solid black;
+}
+
+.item1 {
+    min-height: 2rem;
+    min-width: 2rem;
+}
+
+.item2 {
+    min-width: 4rem;
+    min-height: 4rem;
+}
+
+.item3 {
+    min-width: 8rem;
+    min-height: 8rem;
+}
