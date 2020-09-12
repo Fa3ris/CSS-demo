@@ -1,0 +1,39 @@
+div {
+    border:dashed red;
+    margin: 2px;
+    padding: 5px;
+}
+
+#p1 {
+    font-size: 1em;
+}
+
+#p2 {
+    font-size: .5em;
+}
+
+#p2-1 {
+    font-size: .5em;
+}
+
+#p2-1::first-line {
+    color: cadetblue;
+    font-size: large;
+    font-weight: bold;
+}
+
+#p3 {
+    font-size: 12px;
+}
+
+#p3-1 {
+    font-size: 1.5em;
+}
+
+#p3-1::first-letter {
+    font-size: 4rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
