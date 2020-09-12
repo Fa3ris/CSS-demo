@@ -1,0 +1,86 @@
+:root {
+    --bg-color: hsla(80, 90%, 40%, 0.6);
+    --color: white;
+    --font-family: monospace;
+}
+
+body {
+    background: rgba(128, 128, 128, 0.616);
+}
+
+#menu {
+    /* position */
+    position: fixed;
+    /* horizontal */
+    /* start hiding width + right padding (8em + 0.5em)
+    leaving padding-left visible (2.5em) */
+    right: -8.5em;
+    width: 8em;
+    /* vertical */
+    top: 50%;
+    /* box */
+    padding: 0.5em 0.5em 0.5em 2.5em;
+    box-shadow: 0 1px 3px black;
+    /* font */
+    color: var(--color);
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: large;
+    /* border */
+    border: solid hsla(80, 90%, 40%, 0.5);
+    border-radius: 3em 0.5em 0.5em 3em;
+    /* over the top value to see if overriden */
+    margin: -100em 0 0 0;
+    /* remove border-right to hide text */
+    border-right: none;
+    /* bg */
+    background-color: var(--bg-color);
+    transition: 0.2s;
+}
+
+/* if supports rule use it */
+
+@supports(transform: translate(0, 50%)) {
+    #menu {
+        margin: 0;
+        transform: translate(0, 50%);
+    }
+}
+
+#menu:hover {
+    right: 0;
+}
+
+#menu a {
+    color: inherit;
+    position: relative;
+    transition: 0.2s;
+    /* set explicitly left for animation to work */
+    left: 0;
+}
+
+#menu a:hover, #menu a:focus {
+    border: solid orange;
+}
+
+/* sliding of <a> when focusing on it for accessibility */
+
+#menu a:focus {
+    /* press TAB to focus on element */
+    left: -7em;
+    background: hsla(80, 90%, 40%, 0.7);
+    /* remove outline from user agent stylesheet */
+    outline: none;
+}
+
+/* remove sliding of <a> if already hovering over #menu  */
+
+#menu:hover a:focus {
+    left: 0;
+    background: none;
+}
+
+.bg {
+    background-color: khaki;
+    height: 100vh;
+}
