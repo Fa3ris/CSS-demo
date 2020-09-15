@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        em {
+            padding: 10px 20px;
+            border: 5px solid rgb(223, 62, 62);
+            margin: 20px 30px;
+        }
+
+        #em1 {
+            display: block;
+        }
+
+        #content-box {
+            display: inline-block;
+            margin: 10px;
+            border: 5px solid #000;
+            padding: 10px;
+            width: 150px;
+            height: 200px;
+            box-sizing: content-box;
+        }
+
+        
+        #border-box {
+            display: inline-block;
+            margin: 10px;
+            border: 5px solid #000;
+            padding: 10px;
+            width: 150px;
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+        #third-box {
+            display: inline-block;
+            margin: 10px;
+            border: 5px solid #000;
+            padding: 10px;
+            width: 150px;
+            height: 200px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Jane Doe</h1>
+    <div class="job-title">Web Developer</div>
+    <p>Far far away, behind the word mountains, <em> vertical padding and margin do not apply</em><em>
+        , there live the blind
+            texts. Separated they
+    </em> live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, libero. Quis nisi non corrupti ad accusantium veniam, odio illo nam? Quae perspiciatis repellendus deleniti impedit eligendi sequi perferendis provident eius?
+    Provident veniam, vel dignissimos quisquam qui nulla et animi quas ullam, magnam eaque distinctio unde minima odio? Ea ratione, aliquam ipsa vero eos praesentium nostrum nisi eveniet nemo!
+    <span id="border-box">border box, box align with baseline of the last line box</span><span id="content-box">content box I also align with the base line of my last line box Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste aliquid dignissimos quidem ab est porro ex exercitationem, rem dolor, doloribus iusto optio nostrum fugiat accusamus itaque ut neque! Officiis, accusantium!
+    Laudantium sint sequi qui blanditiis? Aspernatur, explicabo et quos porro vel nemo nulla hic ab illo aperiam labore dolorem ipsa quaerat dolores, itaque magnam voluptas repudiandae laudantium? Sapiente, fuga suscipit.
+    Illo eveniet sunt dolore ab quis mollitia vel reiciendis? Molestias accusantium necessitatibus optio eum vel cupiditate voluptate ullam, ex itaque omnis. Asperiores, facilis! Esse nam, consequuntur ipsum dolorem similique ipsam.
+    Officia, delectus perferendis eum fugiat nobis ex asperiores eligendi obcaecati aut optio esse commodi nostrum ipsa fugit cum porro atque nihil veniam dolor corporis? Non autem qui itaque expedita repellendus.
+    Minus ducimus architecto saepe voluptatem deleniti itaque laboriosam deserunt, illum asperiores ad. Iure cumque nobis repellendus nam natus numquam quaerat ad? Sapiente quod, modi quasi repellendus atque distinctio similique esse.</span> <span id="third-box">as my overflow property is not set to visible i align with my margin-bottom</span>, <em id="em1">use of display block</em> illum sapiente nisi voluptate esse culpa cumque possimus, sequi veritatis blanditiis ea molestias facilis. Sapiente.
+    Nihil assumenda pariatur aliquam perspiciatis provident aut omnis veniam dicta recusandae quaerat sapiente odio eaque corporis dignissimos nemo deserunt suscipit, eum sed exercitationem? Ipsum maxime dolor quidem libero temporibus debitis.
+    Quaerat minus, rerum accusamus non sequi  Illo delectus, atque voluptas sunt officiis perferendis, cum nobis iusto temporibus, at laudantium aspernatur doloremque quas fugit.
+    Similique labore tenetur maxime eius consequuntur suscipit, doloremque voluptatum quia optio illo vel, quibusdam alias veniam ea numquam ex. Eligendi harum dicta reiciendis atque. Nemo asperiores veritatis ab id. Voluptate.
+    Placeat dolorum provident laborum sed iste enim sequi numquam soluta facilis voluptates ratione, maxime odit aut tempore, optio sit debitis cumque quisquam excepturi laudantium culpa eius, voluptatibus quidem? Provident, tenetur?</p>
+
+    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+        paradisematic country, in which roasted parts of sentences fly into your mouth. </p>
+
+    <h2>Contact information</h2>
+    <ul>
+        <li>Email: <a href="mailto:jane@example.com">jane@example.com</a></li>
+        <li>Web: <a href="http://example.com">http://example.com</a></li>
+        <li>Tel: 123 45678</li>
+    </ul>
+
+</body>
+
+</html>
